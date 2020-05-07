@@ -1,8 +1,19 @@
-﻿/.idea/.idea.Productivity/.idea/misc.xml
-/.idea/.idea.Productivity/.idea/dictionaries/Johnathon.xml
-/.idea/.idea.Productivity/.idea/encodings.xml
-/.idea/.idea.Productivity/.idea/indexLayout.xml
-/.idea/.idea.Productivity/riderModule.iml
-/.idea/.idea.Productivity/.idea/vcs.xml
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/projectSettingsUpdater.xml
+/.idea.Productivity.iml
+/contentModel.xml
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+#All files inside of the .idea directory (Rider specific files)
+/.idea/*
+#All files inside of the /obj and /bin directories in all projects as it's automatically created
+#during compilation of the project (i.e. not everybody needs it) 
 /*/obj/
 /*/bin/
