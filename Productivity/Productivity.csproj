@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MenuGenerator\MenuGenerator.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Lang\Base.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Base.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Lang\Base.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Base.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Lang\Base.fr.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Base.fr.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Lang\Base.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Base.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Lang\Base.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Base.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Lang\Base.fr.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Base.fr.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0-preview.3.20214.6" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Model" />
+    </ItemGroup>
+
+</Project>
